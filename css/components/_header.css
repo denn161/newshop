@@ -1,0 +1,47 @@
+.header{
+    background-color: #222222;
+    height: 75px;
+    position: relative;
+
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.logo{
+    margin-right: 41px;
+}
+.header__item-link:not(:last-child){
+    margin-right: 33px;
+}
+.header__menu{
+    /* position: absolute;
+    right: 0;
+    top: 75px;
+    background-color: #fff;
+   
+    z-index: 100; */
+    display: none;
+}
+
+.brand__container{
+   display: flex; 
+   
+}
+.brand__item-img{
+    width: 50%;
+}
+
+.brand__item{
+    width: 50%;
+    background: #F1E4E6;  
+    display: flex;
+    align-items: center;
+    padding-left: 64px;
+}
+.brand__title{
+    padding-left: 32px;
+}
