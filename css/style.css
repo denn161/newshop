@@ -1,3 +1,5 @@
 @import "../normalize.css";
 @import "./components/_global.css";
 @import "./components/_header.css";
+@import "./components/_promotion.css";
+@import "./components/_fetured.css";

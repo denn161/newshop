@@ -1,6 +1,6 @@
 .header{
     background-color: #222222;
-    height: 75px;
+    min-height: 75px;
     position: relative;
 
 }
@@ -14,9 +14,57 @@
 .logo{
     margin-right: 41px;
 }
+.header__item-link{
+      display: inline-block;
+}
 .header__item-link:not(:last-child){
     margin-right: 33px;
 }
+.burger{ 
+    width: 32px;
+    height: 23px;   
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    position: relative;  
+    outline: none;
+}
+.burger span{
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    left: 0;
+    top: auto;
+    right:0;
+    background-color: #fff;
+   
+}
+
+.basket__link{
+    position: relative;
+    padding-right: 15px;
+}
+.basket__link span{
+    display:inline-block;
+    position:absolute;
+    background-color: var(--pink-color);
+    width: 19px;
+    height: 19px;
+    right: 6px;
+    top: -6px;
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--white-color);   
+    border-radius: 50%;
+    text-align: center;
+    padding: 2px 0;
+    z-index: 5;
+
+}
+.center{
+    display: flex;
+    align-items: center;
+}
+
 .header__menu{
     /* position: absolute;
     right: 0;
@@ -43,5 +91,46 @@
     padding-left: 64px;
 }
 .brand__title{
-    padding-left: 32px;
+    padding-left: 28px;
+   max-width: 405px;
+    font-weight: 900;
+   font-size: 48px;
+  line-height:40px;
+  color: var(--black-color);
+  position:relative;  
+ 
+}
+.brand__title::before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--pink-color);
+    opacity: 0;
+    transition: all .3s;
+
+}
+.brand__title:hover::before{
+    opacity: 1;
+}
+
+.brand{
+    text-transform: uppercase;
+    display: block;
+}
+.lux{
+    text-transform: uppercase;
+    font-size:24px;    
+    font-weight: 700;   
+   
+}
+.fashion{
+    color: var(--pink-color);
+    font-size:24px;
+    font-weight: 700;
+    text-transform: uppercase;
+  
 }
