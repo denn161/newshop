@@ -42,14 +42,6 @@
             </g>
         </symbol>
     </svg>
-
-
-
-
-
-
-
-
     <header class="header">
     <div class="container header__container">       
             <div class="header__item">
@@ -57,24 +49,25 @@
                 <input class="header__search" type="image" src="images/search-input.svg" >
             </div>               
                <div class="header__item center">
-                <button class="header__btn burger btn__reset header__item-link" type="button">
+                <button id="burger" class="header__btn burger btn__reset header__item-link" type="button">
                     <span></span>
                 </button>
                 <a href="#" class="header__item-link"><img src="images/user-icon.svg" alt="" class="user__img"></a>
                 <a href="#" class="header__item-link basket__link"><img src="images/basket.svg" alt="" class="basket__img"> <span>5</span></a>
-               </div>                  
+               </div>                 
         
     </div>
-    <nav class="header__menu">
-        <button type="button" class="close__btn"></button>
-        <h2 class="nav__title">
-            menu
-        </h2>
+    <nav id="nav" class="header__menu">       
         <ul class="menu">
+            <button type="button" class="nav__close-btn" aria-label="close-menu">
+                         </button>
+            <h2 class="nav__title">
+                menu
+            </h2>
             <li class="menu__item">
                 <h3 class="menu__item-title">man</h3>
                 <ul class="menu__list">
-                    <li class="menu__list-item">Accessories<a href="#" class="menu__list-link"></a></li>
+                    <li class="menu__list-item"><a href="#" class="menu__list-link">Accessories</a></li>
                     <li class="menu__list-item"><a href="#" class="menu__list-link">Bags</a></li>
                     <li class="menu__list-item"><a href="#" class="menu__list-link">Denim</a></li>
                     <li class="menu__list-item"><a href="#" class="menu__list-link">T-Shirts</a></li>
@@ -83,7 +76,7 @@
             <li class="menu__item">
                 <h3 class="menu__item-title">woman</h3>
                 <ul class="menu__list">
-                    <li class="menu__list-item"><a class="menu__list-link" href="#"></a>Accessories</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Accessories</a></li>
                     <li class="menu__list-item"><a class="menu__list-link" href="#">Jackets & Coats</a></li>
                     <li class="menu__list-item"><a class="menu__list-link" href="#">Polos</a></li>
                     <li class="menu__list-item"><a class="menu__list-link" href="#">t-shirts</a></li>
@@ -93,7 +86,7 @@
             <li class="menu__item">
                 <h3 class="menu__item-title">KIDS</h3>
                 <ul class="menu__list">
-                    <li class="menu__list-item"><a class="menu__list-link" href="#"></a>Accessories</a></li>
+                    <li class="menu__list-item"><a class="menu__list-link" href="#">Accessories</a></li>
                     <li class="menu__list-item"><a class="menu__list-link" href="#">Jackets & Coats</a></li>
                     <li class="menu__list-item"><a class="menu__list-link" href="#">Polos</a></li>
                     <li class="menu__list-item"><a class="menu__list-link" href="#">t-shirts</a></li>
@@ -370,22 +363,16 @@
                             </svg>
                              </a></li>
 
-
-
-
                  </ul>
 
             </div>
-
-
-
         </div>
-
-
 
     </footer>
 
 
+
+    <script src="js/main.js"></script>
     
 </body>
 </html>
