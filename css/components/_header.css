@@ -70,21 +70,22 @@
     height: 769px;
     padding: 16px 0 157px 0;
     position: absolute;
-    right: 0;
+    right: -100%;
     top: 81px;
     background-color: var(--white-color);  
-    z-index: 100;    
+    z-index: 100;  
+    transition: all .3s ease-in-out;  
 }
 
-  /* .header__menu--visibel{
-    transform: translateX(0);
-    transition: all .3s ease-in-out;
-} */
+  .header__menu.menu--visibel{
+    right: 0;
+    transition: all .3s;
+}
 
 .menu{
     position: relative;
-     padding: 16px 0 157px 33px;
-        font-size: 14px;
+    padding: 16px 0 157px 33px;
+    font-size: 14px;
     line-height: 17px;
     
 }
