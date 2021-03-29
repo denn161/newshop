@@ -70,7 +70,7 @@
     height: 769px;
     padding: 16px 0 157px 0;
     position: absolute;
-    right: -100%;
+    right:0;
     top: 81px;
     background-color: var(--white-color);  
     z-index: 100;  
@@ -98,7 +98,7 @@
     border: none;
     background-image: url(../../images/close-btn.svg);
     background-color: transparent;
-  
+  cursor: pointer;
         
 }
 
