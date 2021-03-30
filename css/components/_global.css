@@ -56,6 +56,7 @@ img {
 	background-color: transparent;
 	padding: 0;
 	margin: 0;
+	display: block;
 }
 .page-section{
 	margin-bottom: 81px;

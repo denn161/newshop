@@ -2,7 +2,7 @@
     background-color: #222222;
     min-height: 75px;
     position: relative;
-
+   
 }
 
 .header__container{
@@ -35,8 +35,7 @@
     left: 0;
     top: auto;
     right:0;
-    background-color: #fff;
-   
+    background-color: #fff;   
 }
 
 .basket__link{
@@ -66,10 +65,12 @@
 }
 
 .header__menu{   
+
+    display: none;
     width: 232px;
     height: 769px;
     padding: 16px 0 157px 0;
-    position: absolute;
+    position:absolute;
     right:0;
     top: 81px;
     background-color: var(--white-color);  
