@@ -67,6 +67,7 @@
   margin-left: 20px;
 }
 .radio__input{
+ -webkit-appearance: none;
   appearance: none;
   position: absolute;
 }
