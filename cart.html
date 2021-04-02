@@ -99,75 +99,88 @@
     
             </ul>
         </nav>
-    </header>
-   
-        <section class="registration">
-            <div class="registration__top">
-                <div class="container">
-                    <h2 class="registration__title">
-                        Registration
-                    </h2>
-                </div>
-            </div>
-            <div class="registration__bottom">
-                <div class="container">
-                    <div class="registration__inner">
-                        <form class="registration__form registration__item">
-                        
-                            <h4 class="registration__form-title">
-                                Your Name
-                            </h4>
-                            <input class="registration__form-input" type="text" placeholder="First Name" pattern="[A-Z]">
-                            <input class="registration__form-input" type="text" placeholder="Last Name" pattern="[A-Z]">
-
-                            <ul class="registration__form-radio">
-                                <li class="registration__radio">
-                                    <input id="radio-1" class="radio__input" type="radio" name="male">
-                           <label class="radio__label" for="radio-1">Male</label>
-                                </li>
-                         <li class="registration__radio">
-                                <input id="radio-2" class="radio__input" type="radio" name="male">
-                                <label class="radio__label" for="radio-2">Female</label>
-                         </li>
-                        
-                            </ul>       
-                                                                        
-                            <h4 class="registration__form-title">
-                                Login details
-                            </h4>
-                            <input class="registration__form-input" type="email" placeholder="Email">
-                            <input class="registration__form-input" type="password" placeholder="Password">
-                            <p class="registration__form-text">
-                                Please use 8 or more characters, with at least 1 number and a mixture of uppercase and
-                                lowercase letters
-                            </p>
-                            <button class="registration__form-btn btn__reset" type="submit">JOIN NOW</button>
-                        </form>                       
-                        
-                        <div class="registration__item">
-                            <h3 class="registration__item-title">
-                                LOYALTY HAS ITS PERKS
+    </header>   
+        <section class="shoppingcarts">           
+                <div class="shopingcarts__top registration__top">
+                    <div class="container">
+                        <h2 class=" shopingcarts__title registration__title">
+                            shopping cart
+                        </h2>
+                    </div>
+                </div> 
+            <div class="shoppingcarts__inner container">
+                <ul class="shoppingcarts__box">
+                    <li class="shoppingcarts__item">
+                        <button class="carts__close-btn"></button>
+                        <div class="shoppingcarts__img">
+                            <img src="images/shopping-1.jpg" alt="" class="shoppingcart__images">
+                        </div>
+                        <div class="descr__item">
+                            <h3 class="descr__item-title">
+                                mango people t-shirt
                             </h3>
-                            <p class="registration__item-text">
-                                Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as
-                                you join:
-                            </p>
-                            <ul class="registration__list">
-                                <li class="registration__list-item">15% off welcome offer</li>
-                                <li class="registration__list-item">Free shipping, returns and exchanges on all orders</li>
-                                <li class="registration__list-item">$10 off a purchase on your birthday</li>
-                                <li class="registration__list-item">Early access to products</li>
-                                <li class="registration__list-item">Exclusive offers & rewards</li>
+                            <ul class="descr__list">
+                                <li class="descr__list-item">Price: <span class="descr__price">$300</span> </li>
+                                <li class="descr__list-item">Color: Red</li>
+                                <li class="descr__list-item">Size: Xl</li>
+                                <li class="descr__list-item">Quantity: <span class="descr__numb">2</span></li>
                             </ul>
                         </div>
+                    </li>
+                    <li class="shoppingcarts__item">
+                        <button type="button" class="carts__close-btn"></button>
+                        <div class="shoppingcarts__img">
+                            <img src="images/shopping-2.jpg" alt="" class="shoppingcarts__images">
+                        </div>
+                        <div class="descr__item">
+                            <h3 class="descr__item-title">
+                                mango people t-shirt
+                            </h3>
+                            <ul class="descr__list">
+                                <li class="descr__list-item">Price: <span class="descr__price">$300</span> </li>
+                                <li class="descr__list-item">Color: Red</li>
+                                <li class="descr__list-item">Size: Xl</li>
+                                <li class="descr__list-item">Quantity: <span class="descr__numb">2</span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <ul class="shoppingcarts__buttons">
+                        <li class="shoppingcarts__buttons-item">
+                            <button type="submit" class="shoppingcarts__btn btn__reset">clear shopping cart</button>
+                        </li>
+                        <li class="shoppingcarts__buttons-item">
+                            <button type="submit" class="shoppingcarts__btn btn__reset">continue shopping</button>
+                        </li>
+                    </ul>
 
-                    </div>           
-                       
-      
-                </div>
-        
-        
-            </div>  
+
+                </ul>
+                <form action="#" class="shoppingcarts__form adress__form">
+                    <h3 class="adress__title">
+                        SHIPPING ADRESS
+                    </h3>
+                    <input type="text" class="adress__form-input" placeholder="Bangladesh">
+                    <input type="text" class="adress__form-input" placeholder="State">
+                    <input type="text" class="adress__form-input" placeholder="Postcode / Zip">
+                   <button type="submit" class="adress__form-btn btn__reset">GET A QUOTE</button>
+                    <div class="form__checkout">
+                        <p class="form__checkout-total__text">SUB TOTAL <span class="total__price">$900</span></p>
+                        <p class="form__checkout-grand__text">GRAND TOTAL <span class="grand__price">$900</span></p>
+                        <div class="checkout__border-top">
+                            <div class="checkout__proceed">
+                                <button type="submit" class="checkout__btn">PROCEED TO CHECKOUT</button>
+                            </div>
+                        </div>                                            
+                    </div>
+                </form>             
+            
+            
+            
+            </div>
+
+
+
+
          
       
         </section>

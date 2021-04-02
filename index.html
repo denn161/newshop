@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="scss/style.css">
 </head>
 <body>
     <!-- Sprite -->
@@ -45,7 +45,7 @@
     <header class="header">
     <div class="container header__container">       
             <div class="header__item">
-                <img src="./images/logo.png" alt="logo" class="logo">
+                <img src="./images/logo.png" alt="logo" class="header__logo">
                 <input class="header__search" type="image" src="images/search-input.svg" >
             </div>               
                <div class="header__item center">
@@ -59,9 +59,9 @@
     </div>
     <nav id="nav" class="header__menu">       
         <ul class="menu">
-            <button type="button" class="nav__close-btn" aria-label="close-menu">
+            <button type="button" class="menu__close-btn" aria-label="close-menu">
                          </button>
-            <h2 class="nav__title">
+            <h2 class="menu__title">
                 menu
             </h2>
             <li class="menu__item">
@@ -298,7 +298,7 @@
                     </div>
                 </li>
             </ul>
-            <button class="feuterd__btn btn__reset">Browse All Product</button>
+            <button class="fetured__btn btn__reset">Browse All Product</button>
         </div>
     </section>
     <section class="services">
@@ -355,7 +355,7 @@
                      <p class="form__text">                       
                         for our newletter and promotion
                      </p>
-                     <div class="subscribe">
+                     <div class="form__box">
                         <input type="email" class="form__input" placeholder="Enter Your Email">
                         <button class="form__btn btn__reset">Subscribe</button>
 

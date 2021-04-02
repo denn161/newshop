@@ -1,0 +1,35 @@
+.services {
+    background: #222224;
+    padding: 104px 0;
+
+
+&__list {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: $white-color;
+}
+
+&__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 134px;
+}
+
+&__item-title {
+    font-weight: 400;
+    font-size: 19.96px;
+    line-height: 24px;
+
+    /* text-transform: capitalize; */
+}
+
+&__item-text {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 17px;
+}
+}
