@@ -1,6 +1,7 @@
 const hb = document.querySelector('.header__btn');
 const menu = document.querySelector('.header__menu');
 const close = document.querySelector('.menu__close-btn');
+const link = document.querySelector('.menu__list-link');
 
 
 
@@ -16,6 +17,7 @@ close.addEventListener('click', function () {
   menu.classList.remove('active');
   
 });
+
 
 
 

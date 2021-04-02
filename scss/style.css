@@ -409,6 +409,11 @@ img {
 .header {
   background-color: #222222;
   min-height: 75px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999;
 }
 .header__container {
   display: -webkit-box;
@@ -478,7 +483,7 @@ img {
 }
 .header .header__menu {
   width: 232px;
-  height: 769px;
+  height: 950px;
   padding: 16px 0 157px 0;
   position: fixed;
   right: -100px;
@@ -487,6 +492,8 @@ img {
   z-index: 999;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .header .header__menu.active {
   right: 0;
@@ -501,12 +508,14 @@ img {
 }
 .header .header__menu .menu__close-btn {
   position: absolute;
-  right: 16px;
-  top: 0;
-  width: 12px;
-  height: 12px;
+  right: 20px;
+  top: 20px;
+  width: 25px;
+  height: 25px;
   border: none;
   background-image: url(../images/close-btn.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: transparent;
   cursor: pointer;
 }
@@ -520,15 +529,17 @@ img {
   color: #222222;
 }
 .header .header__menu .menu .menu__list-item {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .header .header__menu .menu .menu__list-item:hover .menu__list-link {
   color: #F16D7F;
   font-weight: 700;
   text-decoration: underline;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
 }
 .header .header__menu .menu__item-title {
   color: #F16D7F;
@@ -538,7 +549,11 @@ img {
 }
 .header .header__menu .menu__list-link {
   text-transform: capitalize;
-  padding-bottom: 11px;
+  padding: 15px;
+  font-size: 22px;
+  line-height: 17px;
+  font-weight: 400;
+  color: #6F6E6E;
 }
 
 .brand__container {
@@ -546,6 +561,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
+  padding-top: 75px;
 }
 .brand__container .brand__item-img {
   width: 50%;
@@ -1138,7 +1154,7 @@ img {
 }
 .registration__top {
   background: #F8F3F4;
-  padding: 60px 0;
+  padding: 135px 0 60px;
 }
 .registration__title {
   font-size: 24px;

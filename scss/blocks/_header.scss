@@ -1,12 +1,12 @@
 .header {
     background-color: #222222;
     min-height: 75px;
-    // position:fixed;
-    // width: 100%;
-    // left: 0;
-    // top: 0;
-    // z-index: 999;
-  
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+
 
     &__container {
         display: flex;
@@ -76,11 +76,11 @@
 
 
 
-    .header__menu {
+    .header__menu {       
 
         // display: none;
         width: 232px;
-        height: 769px;
+        height: 950px;
         padding: 16px 0 157px 0;
         position: fixed;
         right: -100px;
@@ -88,6 +88,7 @@
         background-color: $white-color;
         z-index: 999;
         transition: all 0.5s ease-in-out;
+        box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
 
         &.active {
             right: 0;
@@ -104,12 +105,14 @@
 
             &__close-btn {
                 position: absolute;
-                right: 16px;
-                top: 0;
-                width: 12px;
-                height: 12px;
+                right: 20px;
+                top: 20px;
+                width: 25px;
+                height: 25px;
                 border: none;
                 background-image: url(../images/close-btn.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
                 background-color: transparent;
                 cursor: pointer;
 
@@ -127,14 +130,17 @@
             }
 
             .menu__list-item {
-                transition: all .3s;
+                transition: all .3s linear;
+
+
 
 
                 &:hover .menu__list-link {
                     color: $pink-color;
                     font-weight: 700;
                     text-decoration: underline;
-                    transition: all .3s;
+                    transition: all .3s linear;
+                    transform: scale(1.25);
 
                 }
             }
@@ -149,7 +155,9 @@
 
             &__list-link {
                 text-transform: capitalize;
-                padding-bottom: 11px;
+                padding: 15px;
+                @include font(22px, 17px, 400);
+                color: #6F6E6E;
 
             }
         }
