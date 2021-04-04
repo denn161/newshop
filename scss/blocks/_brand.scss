@@ -1,63 +1,107 @@
-
-.brand__container{
-   display: flex; 
-   overflow: hidden;
-   padding-top: 75px;
-   
-
-.brand__item-img{
-    width: 50%;
-}
-
-.brand__item{
-    width: 50%;
-    background: #F1E4E6;  
+.brand__container {
     display: flex;
-    align-items: center;
-    padding-left: 64px;
-}
-.brand__title{
-    padding-left: 28px;
-   max-width: 405px;
-    font-weight: 900;
-   font-size: 48px;
-  line-height:40px;
-  color: $black-color;
-  position:relative;  
- 
-}
-.brand__title::before{
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: auto;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    background-color:$pink-color;
-    opacity: 0;
-    transition: all .3s;
+    overflow: hidden;
+    padding-top: 75px;
 
-}
-.brand__title:hover::before{
-    opacity: 1;
-}
+    @media (max-width:414px) {
+        height: 363px;
+    }
 
-.brand{
-    text-transform: uppercase;
-    display: block;
-}
-.lux{
-    text-transform: uppercase;
-    font-size:24px;    
-    font-weight: 700;   
-   
-}
-.fashion{
-    color: $pink-color;
-    font-size:24px;
-    font-weight: 700;
-    text-transform: uppercase;
-  
-}
+
+
+
+    .brand__item-img {
+        width: 50%;
+
+        @media(max-width:768px) {
+            width: 50%;
+            // height: 368px;
+
+        }
+
+        @media (max-width:414px) {
+            display: none;
+        }
+
+
+       
+    }
+
+    .brand__item {
+        width: 50%;
+        background: #F1E4E6;
+        display: flex;
+        align-items: center;
+        padding-left: 64px;
+
+        @media(max-width:768px) {
+            padding-left: 40px;
+
+        }
+
+        @media (max-width:414px) {
+            width: 100%;
+            padding: 0 56px;
+        }
+
+    }
+
+    .brand__title {
+        padding-left: 28px;
+        max-width: 405px;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 40px;
+        color: $black-color;
+        position: relative;
+
+        @media (max-width:414px) {
+            @include font(38px, 32px, 700);
+            padding-left: 15px;
+        }
+
+    }
+
+    .brand__title::before {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: auto;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: $pink-color;
+        opacity: 0;
+        transition: all .3s;
+
+    }
+
+    .brand__title:hover::before {
+        opacity: 1;
+    }
+
+    .brand {
+        text-transform: uppercase;
+        display: block;
+    }
+
+    .lux {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 700;
+
+        @media (max-width:375px) {
+            @include font(19px, 19px, 700);
+
+        }
+
+    }
+
+    .fashion {
+        color: $pink-color;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+
+    }
 }
