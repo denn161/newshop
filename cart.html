@@ -50,7 +50,7 @@
                 <input class="header__search" type="image" src="images/search-input.svg">
             </div>
             <div class="header__item center">
-                <button id="burger" class="header__btn burger btn__reset header__item-link" type="button">
+                <button id="burger" class="header__btn burger btn__reset" type="button">
                     <span></span>
                 </button>
                 <a href="#" class="header__item-link"><img src="images/user-icon.svg" alt="" class="user__img"></a>
@@ -113,7 +113,7 @@
                     <li class="shoppingcarts__item">
                         <button class="carts__close-btn"></button>
                         <div class="shoppingcarts__img">
-                            <img src="images/shopping-1.jpg" alt="" class="shoppingcart__images">
+                            <img src="images/shopping-1.jpg" alt="" class="shoppingcarts__images">
                         </div>
                         <div class="descr__item">
                             <h3 class="descr__item-title">
@@ -155,25 +155,29 @@
 
 
                 </ul>
-                <form action="#" class="shoppingcarts__form adress__form">
-                    <h3 class="adress__title">
-                        SHIPPING ADRESS
-                    </h3>
-                    <input type="text" class="adress__form-input" placeholder="Bangladesh">
-                    <input type="text" class="adress__form-input" placeholder="State">
-                    <input type="text" class="adress__form-input" placeholder="Postcode / Zip">
-                   <button type="submit" class="adress__form-btn btn__reset">GET A QUOTE</button>
-                    <div class="form__checkout">
-                        <p class="form__checkout-total__text">SUB TOTAL <span class="total__price">$900</span></p>
-                        <p class="form__checkout-grand__text">GRAND TOTAL <span class="grand__price">$900</span></p>
-                        <div class="checkout__border-top">
-                            <div class="checkout__proceed">
-                                <button type="submit" class="checkout__btn">PROCEED TO CHECKOUT</button>
+                <div class="form__box">
+                    <form action="#" class="shoppingcarts__form adress__form">
+                        <h3 class="adress__title">
+                            SHIPPING ADRESS
+                        </h3>
+                        <input type="text" class="adress__form-input" placeholder="Bangladesh">
+                        <input type="text" class="adress__form-input" placeholder="State">
+                        <input type="text" class="adress__form-input" placeholder="Postcode / Zip">
+                        <button type="submit" class="adress__form-btn btn__reset">GET A QUOTE</button>
+                    </form>
+                    <div class="form__check">
+                        <div class="form__checkout">
+                            <p class="form__checkout-total__text">SUB TOTAL <span class="total__price">$900</span></p>
+                            <p class="form__checkout-grand__text">GRAND TOTAL <span class="grand__price">$900</span></p>
+                            <div class="checkout__border-top">
+                                <div class="checkout__proceed">
+                                    <button type="submit" class="checkout__btn">PROCEED TO CHECKOUT</button>
+                                </div>
                             </div>
-                        </div>                                            
+                        </div>
+
                     </div>
-                </form>             
-            
+                   </div>            
             
             
             </div>
