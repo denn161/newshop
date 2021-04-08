@@ -65,16 +65,14 @@
 
     &__form {
         width: 50%;
+        margin-right: 40px;
 
-        @media (max-width:1024px) {
-            margin-right: 40px;
+        // @media (max-width:1024px) {
+        //     margin-right: 40px;
 
-        }
+        // }
 
-        @media (max-width:768px) {
-            margin-right: 40px;
 
-        }
 
 
         @media (max-width:414px) {

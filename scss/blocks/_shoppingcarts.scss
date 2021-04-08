@@ -16,7 +16,7 @@
     }
 
 
-    .shoppingcarts__box {
+    &__box {
       @media(max-width:768px) {
         margin-bottom: 40px;
       }
@@ -35,9 +35,16 @@
       box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
       margin-bottom: 40px;
 
+      @media(max-width:1024px) {
+       max-width: 93%;
+        margin: 0 auto 30px;
+
+      }
+
 
       @media(max-width:768px) {
-        width: 100%;
+        width: 96%;
+        margin: 0 auto 30px;
 
       }
 
@@ -45,8 +52,6 @@
         max-width: 95%;
         margin: 20px auto;
         height: 188px;
-
-
 
       }
 
@@ -100,8 +105,6 @@
 
         @media (max-width:414px) {
           padding: 13px 0 0 17px;
-
-
         }
       }
 
@@ -150,21 +153,23 @@
     .form__box {
       @media(max-width:768px) {
         display: flex;
-        justify-content: space-between;
         align-items: center;
-
+        justify-content: space-between;
       }
 
       @media (max-width:414px) {
         display: block;
-        
+
       }
 
       .adress__form {
-        padding-top: 17px;
+        padding: 0 16px;
+        width: 50%;
 
         @media(max-width:768px) {
           padding-top: 40px;
+
+
 
         }
 
@@ -195,6 +200,13 @@
 
         }
 
+        &__buttons {
+          @media(max-width:375px) {
+            margin-top: 30px;
+
+          }
+        }
+
         &-btn {
           padding: 10px 14px 12px 15px;
           text-transform: uppercase;
@@ -221,10 +233,20 @@
 
       }
 
+      .form__check {
+        width: 100%;
+
+        @media (max-width:414px) {
+          width: 100%;
+        }
+      }
+
       .form__checkout {
         background: #F5F3F3;
         padding: 39px 34px 42px 44px;
         width: 360px;
+        margin: 0 auto;
+
 
         @media (max-width:414px) {
           margin: 0 auto;
@@ -310,6 +332,8 @@
       @media(max-width:768px) {
         justify-content: center;
       }
+
+      margin-top: 30px;
 
       .shoppingcarts__btn {
         display: block;
