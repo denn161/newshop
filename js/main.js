@@ -5,6 +5,11 @@ const link = document.querySelector('.menu__list-link');
 
 
 
+
+
+  
+
+  
 hb.addEventListener('click', function (e) {
   e.preventDefault();
 
@@ -18,6 +23,46 @@ close.addEventListener('click', function () {
   
 });
 
+// women__btn.addEventListener('click', function () {
+
+//   service.classList.toggle('women--active');
+
+
+// });
+
+
+
+
+
+
+
+
+// $(function () {
+//   $('.product__slider').slick({
+//     slidesToShow: 1,
+//     dots: false,
+//     // adaptiveHeight: true,
+//     prevArrow: '<button class="product-slider__btn product-slider__btn-prev btn__reset"><img src="images/arrow-left.svg" alt=""></button>',
+//     nextArrow: '<button class="product-slider__btn product-slider__btn-next btn__reset "><img src="./images/arrow-right.svg" alt=""></button>',
+
+//   });
+// });
+
+new Swiper('.image-slider', {
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  loop: true,
+  //  scrollbar: {
+  //   el: '.swiper-scrollbar',
+  // },
+  
+
+
+
+});
 
 
 
