@@ -40,26 +40,44 @@
 
     .burger {
         width: 32px;
-        height: 23px;
-        border-top: 2px solid #fff;
-        border-bottom: 2px solid #fff;
-        position: relative;
-        outline: none;
+        height: 32px;
         margin-right: 32px;
+        display: block;
+        transition: transform .3s linear;
 
         @media (max-width:375px) {
             margin-right: 30px;
         }
 
-        & span {
-            position: absolute;
-            width: 32px;
+        span {
+            display: block;
+            position: relative;
+            width: 100%;
             height: 2px;
-            left: 0;
-            top: auto;
-            right: 0;
             background-color: #fff;
+            box-shadow: 0 2px 10px #00000030;
         }
+
+        span+span {
+            margin-top: 7px;
+        }
+
+        span:nth-child(1) {
+            animation: ease 0.5s top-back forwards;
+
+        }
+
+        span:nth-child(2) {
+            animation: ease 0.5s middle-back forwards;
+
+        }
+
+        span:nth-child(3) {
+            animation: ease 0.5s bottom-back forwards;
+
+        }
+
+
     }
 
     .basket__link {
@@ -131,12 +149,11 @@
 
 
 
-        &.active {
-            right: 0;
-            transition: all 0.5s linear;
-            background-color: rgba($color:#fff, $alpha: 0.9);
 
-        }
+
+
+
+
 
 
         .menu {
@@ -148,6 +165,7 @@
 
 
             &__close-btn {
+                display: none;
                 position: absolute;
                 right: 20px;
                 top: 20px;
@@ -218,6 +236,206 @@
         }
     }
 
+    &.active {
+        .header__menu {
+            right: 0;
+            transition: all 0.5s linear;
+            background-color: rgba($color:#fff, $alpha: 0.9);
 
 
+
+            @media (max-width:1600px) {
+                right: 119px;
+                transition: all 0.5s linear;
+                background-color: rgba($color:#fff, $alpha: 0.9);
+            }
+
+
+
+
+            @media (max-width:768px) {
+                right: 0;
+                transition: all 0.5s linear;
+                background-color: rgba($color:#fff, $alpha: 0.9);
+            }
+
+        }
+
+
+
+        .burger {
+
+            @media (max-width:1600px) {
+                background-color: $pink-color;
+                transition: transform .3s linear;
+                position: relative;
+                transform: translate(6px, 56px);
+                z-index: 1000;
+            }
+
+            @media (max-width:1024px) {
+                transform: translate(6px, 78px);
+            }
+
+
+            @media (max-width:768px) {
+                transform: translate(-42px, 56px);
+
+            }
+
+            @media (max-width:375px) {
+                transform: translate(10px, 75px);
+            }
+
+
+
+
+            span:nth-child(1) {
+                animation: ease 0.5s top forwards;
+
+
+
+            }
+
+            span:nth-child(2) {
+                animation: ease 0.5s middle forwards;
+
+            }
+
+            span:nth-child(3) {
+                animation: ease 0.5s bottom forwards;
+
+
+            }
+
+
+
+        }
+
+
+
+
+
+    }
+
+
+
+
+}
+
+$top:9px;
+
+@keyframes top {
+    0% {
+        top: 0;
+        transform: rotate(0);
+    }
+
+    50% {
+        top: $top;
+        transform: rotate(0);
+    }
+
+    100% {
+        top: $top;
+        transform: rotate(45deg);
+    }
+
+}
+
+@keyframes top-back {
+    0% {
+        top: $top;
+        transform: rotate(45deg);
+    }
+
+    50% {
+        top: $top;
+        transform: rotate(0);
+    }
+
+    100% {
+        top: 0;
+        transform: rotate(0);
+    }
+
+}
+
+@keyframes middle {
+    0% {
+
+        transform: scale(1);
+    }
+
+    50% {
+        top: $top;
+        transform: scale(0);
+    }
+
+    100% {
+        top: 0;
+        transform: scale(0);
+    }
+
+}
+
+@keyframes middle-back {
+    0% {
+
+        transform: scale(0);
+    }
+
+    50% {
+        top: $top;
+        transform: scale(0);
+    }
+
+    100% {
+        top: 0;
+        transform: scale(1);
+    }
+
+}
+
+@keyframes bottom {
+    0% {
+        bottom: 0;
+        transform: rotate(0);
+    }
+
+    50% {
+        bottom: $top;
+        transform: rotate(0);
+    }
+
+    100% {
+        bottom: $top;
+        transform: rotate(-45deg);
+    }
+
+}
+
+@keyframes bottom-back {
+    0% {
+        bottom: $top;
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        bottom: $top;
+        transform: rotate(0);
+    }
+
+    100% {
+
+        bottom: 0;
+        transform: rotate(0);
+    }
+
+}
+
+@media(max-width:375px) {
+    body.lock {
+        overflow: hidden;
+    }
 }

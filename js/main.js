@@ -1,7 +1,7 @@
 const hb = document.querySelector('.header__btn');
-const menu = document.querySelector('.header__menu');
+const menu = document.querySelector('.header');
 const close = document.querySelector('.menu__close-btn');
-const link = document.querySelector('.menu__list-link');
+const hidden = document.querySelector('body');
 
 
 
@@ -14,14 +14,15 @@ hb.addEventListener('click', function (e) {
   e.preventDefault();
 
 
-  menu.classList.add('active'); 
+  menu.classList.toggle('active');
+  hidden.classList.toggle('lock');
 
 
 });
-close.addEventListener('click', function () {
-  menu.classList.remove('active');
+// close.addEventListener('click', function () {
+//   menu.classList.remove('active');
   
-});
+// });
 
 // women__btn.addEventListener('click', function () {
 
