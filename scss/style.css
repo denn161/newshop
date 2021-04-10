@@ -1280,12 +1280,13 @@ img {
   font-weight: 400;
 }
 .fetured .products-item__btn-hover::before {
-  content: url(images/basket-2.svg);
+  content: "";
   position: absolute;
   left: 11px;
   top: 10px;
-  /* width: 26px;
-  height: 24px; */
+  width: 26px;
+  height: 24px;
+  background-image: url(../images/basket-2.svg);
 }
 .fetured .products-item__content {
   padding: 25px 29px 20px 16px;
