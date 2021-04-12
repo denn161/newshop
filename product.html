@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <title>Document</title>  
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="scss/style.css">
 </head>
@@ -45,25 +43,11 @@
         </symbol>
     </svg>
 
-    <!-- <svg style="display: none;">
-        <symbol id="slash"  viewBox="0 0 113.28 113.281">
-            <g>
-                <path
-                    d="M80.872,3.471l-60.903,98.662c-2.122,3.436-1.055,7.938,2.38,10.057c1.196,0.738,2.521,1.092,3.832,1.092
-                			c2.451,0,4.846-1.231,6.227-3.472l60.903-98.663c2.121-3.435,1.055-7.937-2.381-10.056C87.496-1.029,82.99,0.036,80.872,3.471z" />
-            </g>
-        </symbol>
-    </svg> -->
-
-
-
-
-
-    <header class="header">
+       <header class="header">
         <div class="container header__container">
             <div class="header__item">
                 <img src="./images/logo.png" alt="logo" class="header__logo">
-                <input class="header__search" type="image" src="images/search-input.svg">
+                <input class="header__search" type="image" src="images/search-input.svg" alt="Searsh" >
             </div>
             <div class="header__item center">
                 <button id="burger" class="header__btn burger btn__reset" type="button">
@@ -79,12 +63,13 @@
     
         </div>
         <nav id="nav" class="header__menu">
+            <button type="button" class="menu__close-btn" aria-label="close-menu" >
+            </button>
+            <h2 class="menu__title">
+                menu
+            </h2>
             <ul class="menu">
-                <button type="button" class="menu__close-btn" aria-label="close-menu">
-                </button>
-                <h2 class="menu__title">
-                    menu
-                </h2>
+               
                 <li class="menu__item">
                     <h3 class="menu__item-title">man</h3>
                     <ul class="menu__list">
