@@ -13,7 +13,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato-Italic", sans-serif;
   src: url("../../fonts/lato-italic-webfont.woff") format("woff"), url("../../fonts/lato-italic-webfont.woff2") format("woff2");
   font-display: swap;
   font-weight: 400;
@@ -1505,9 +1505,11 @@ img {
      object-fit: cover;
 }
 .footer .author__massage {
+  font-family: "Lato-Italic", sans-serif;
   width: 360px;
   font-size: 20px;
   line-height: 24px;
+  font-weight: normal;
   color: #222222;
   margin-top: 20px;
 }
@@ -2663,4 +2665,61 @@ img {
   .collection__products-list .collection__products-item:nth-child(3) {
     display: block;
   }
+}
+
+.catalogs__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.catalogs__bottom {
+  padding: 51px 0 64px;
+}
+.catalogs__filter-btn {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: normal;
+  position: relative;
+  padding-right: 26px;
+}
+.catalogs .filter__btn-img {
+  position: absolute;
+  right: 0;
+  top: 4px;
+  fill: #000000;
+}
+.catalogs__list-btn {
+  margin: 0 auto;
+}
+.catalogs__btn-item:not(:last-child) {
+  margin-right: 30px;
+}
+.catalogs__btn-item {
+  display: inline-block;
+  padding-right: 20px;
+  position: relative;
+}
+.catalogs__btn-item::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/arrow-bottom.svg);
+  width: 10px;
+  height: 5px;
+  top: 5px;
+  right: 0;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.catalogs__btn {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  color: #6F6E6E;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: normal;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,74 @@
+.catalogs {
+
+    &__container {
+        display: flex;
+    }
+
+    &__bottom {
+        padding: 51px 0 64px;
+    }
+
+    &__filter-btn {
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        color: $black-color2;
+        @include font(14px, 17px, normal);
+        position: relative;
+        padding-right: 26px;
+
+    }
+
+    .filter__btn-img {
+        position: absolute;
+        right: 0;
+        top: 4px;
+        fill: $black-color2;
+    }
+
+
+
+    &__list-btn {
+
+        margin: 0 auto;
+    }
+
+    &__btn-item:not(:last-child) {
+        margin-right: 30px;
+
+
+    }
+
+    &__btn-item {
+        display: inline-block;
+        padding-right: 20px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            background-image: url(../images/arrow-bottom.svg);
+            width: 10px;
+            height: 5px;
+            top: 5px;
+            right: 0;
+            display: block;
+            @include background(no-repeat, center, cover);
+          
+        }
+
+    }
+
+    &__btn {
+        font-family: 'Lato', sans-serif;
+        text-transform: uppercase;
+        color: $body-color;
+        @include font(14px, 17px, normal);
+    }
+
+
+
+
+
+
+
+}

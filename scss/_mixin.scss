@@ -4,6 +4,12 @@
     font-weight: $weight;
 }
 
+@mixin background($repeat, $position, $size) {
+    background-repeat: $repeat;
+    background-position: $position;
+    background-size: $size;
+
+}
+
 
 $tablet:768px;
-
