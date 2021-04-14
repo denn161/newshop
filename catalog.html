@@ -106,6 +106,7 @@
         </nav>
     </header>
     <section class="shoppingcarts product catalogs">
+        <h2 class="services__title-hidden">Заголовок секции</h2>
         <div class=" product shopingcarts__top registration__top ">
             <div class="container product__container">
                 <h2 class=" shopingcarts__title registration__title product__collection-title">
@@ -130,19 +131,395 @@
         </div>
         <div class="catalogs__bottom">
             <div class="container catalogs__container">
-                <button class="catalogs__filter-btn btn__reset">
-                    filter <svg class="filter__btn-img" width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"/>
-                    </svg>
-                </button>
+                <div class="catalogs__filter">
+                    <div class="catalogs__filter-button">
+                        <button type="button" class="catalogs__filter-btn btn__reset">
+                            filter <svg class="filter__btn-img" width="15" height="10" viewBox="0 0 15 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+                            </svg>
+                        </button>
+                    </div>                       
+                        <div class="catalogs__nav">
+                            <div class="catalogs__nav-item">
+                                <div class="catalogs__nav-btn">
+                                    <button class="catalogs__nav-button btn__reset">
+                                       category
+                                </div>
+                                <ul class="catalogs__nav-list catalogs__nav-list--visibel ">
+                                    <li class="catalogs__item">
+                                        <a href="#"  class="catalogs__item-link">Accessories</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Bags</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Denim</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Hoodies & Sweatshirts</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Jackets & Coats</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Polos</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Shirts</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Shoes</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Sweaters & Knits</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">T-Shirts</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Tanks</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="catalogs__nav-item">
+                                <div class="catalogs__nav-btn">
+                                    <button class="catalogs__nav-button btn__reset">
+                                        brand
+                                </div>
+                                <ul class="catalogs__nav-list">
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Accessories</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Bags</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Denim</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Hoodies & Sweatshirts</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Jackets & Coats</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Polos</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Shirts</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Shoes</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Sweaters & Knits</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">T-Shirts</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Tanks</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="catalogs__nav-item">
+                                <div class="catalogs__nav-btn">
+                                    <button class="catalogs__nav-button btn__reset">
+                                        designer
+                                </div>
+                                <ul class="catalogs__nav-list">
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Accessories</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Bags</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Denim</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Hoodies & Sweatshirts</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Jackets & Coats</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Polos</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Shirts</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Shoes</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Sweaters & Knits</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">T-Shirts</a>
+                                    </li>
+                                    <li class="catalogs__item">
+                                        <a href="#" class="catalogs__item-link">Tanks</a>
+                                    </li>
+                                </ul>
+                            </div>                
+                        
+                        
+                        
+                        </div>
+
+                </div>
+                   
                 <ul class="catalogs__list-btn">
                     <li class="catalogs__btn-item"><button class="catalogs__btn btn__reset">TRENDING NOW</button></li>
-                    <li class="catalogs__btn-item"><button class="catalogs__btn btn__reset">SIZE</button></li>
+                    <li class="catalogs__btn-item catalogs__sizes"><button class="catalogs__btn btn__reset catalogs__btn-size">SIZE</button>
+                        <div class="sizes">
+                            <div class="sizes__item ">
+                                <input id="size1" class="sizes__input" type="checkbox">
+                                <label class="sizes__label" for="size1">XS</label>
+
+                            </div>
+                            <div class="sizes__item">
+                                <input id="size2" class="sizes__input" type="checkbox">
+                                <label  class="sizes__label" for="size2">S</label>
+
+                            </div>
+                            <div class="sizes__item">
+                                <input id="size3" class="sizes__input" type="checkbox">
+                                <label  class="sizes__label" for="size3">M</label>
+
+                            </div>
+                            <div class="sizes__item">
+                                <input id="size4" class="sizes__input" type="checkbox">
+                                <label  class="sizes__label" for="size4">L</label>
+                            </div>
+                        </div>     
+                                
+                    
+                    
+                    </li>
                     <li class="catalogs__btn-item"><button class="catalogs__btn btn__reset">PRICE</button></li>
                 </ul>
             </div>
         </div>             
+    </section>
+    <section class="fetured catalogs__products ">
+        <h2 class="services__title-hidden">Заголовок секции</h2>
+        <div class="container">               
+            <ul class="fetured__products catalog__products">
+                <li class="products-item catalog__products-item  ">
+    
+                    <div class="products__images">
+                        <div class="products__hover">
+                            <button class="products-item__btn-hover btn__reset">
+    
+    
+                                Add to Cart</button>
+                        </div>
+                        <img src="images/product-1.jpg" alt="" class="products__img">
+                    </div>
+    
+                    <div class="products-item__content">
+                        <h3 class="products__title">
+                            ellery x m'o capsule
+                        </h3>
+                        <p class="products__text">
+                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                            teams up with
+                            Moda
+                            Operandi.
+                        </p>
+                        <p class="products__price">$52.00</p>
+                    </div>
+    
+                </li>
+    
+                <li class="products-item catalog__products-item">
+                    <div class="products__images">
+                        <div class="products__hover">
+                            <button class="products-item__btn-hover btn__reset">Add to Cart</button>
+                        </div>
+                        <img src="images/catalog-product-2.jpg" alt="" class="products__img">
+                    </div>
+                    <div class="products-item__content">
+                        <h3 class="products__title">
+                            ellery x m'o capsule
+                        </h3>
+                        <p class="products__text">
+                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                            teams up with
+                            Moda
+                            Operandi.
+                        </p>
+                        <p class="products__price">$52.00</p>
+                    </div>
+                </li>
+                <li class="products-item catalog__products-item">
+                    <div class="products__images">
+                        <div class="products__hover">
+                            <button class="products-item__btn-hover btn__reset">Add to Cart</button>
+                        </div>
+                        <img src="images/product-3.jpg" alt="" class="products__img">
+                    </div>
+                    <div class="products-item__content">
+                        <h3 class="products__title">
+                            ellery x m'o capsule
+                        </h3>
+                        <p class="products__text">
+                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                            teams up with
+                            Moda
+                            Operandi.
+                        </p>
+                        <p class="products__price">$52.00</p>
+                    </div>
+                </li>
+                <li class="products-item catalog__products-item">
+                    <div class="products__images">
+                        <div class="products__hover">
+                            <button class="products-item__btn-hover btn__reset">Add to Cart</button>
+                        </div>
+                        <img src="images/product-4.jpg" alt="" class="products__img">
+                    </div>
+                    <div class="products-item__content">
+                        <h3 class="products__title">
+                            ellery x m'o capsule
+                        </h3>
+                        <p class="products__text">
+                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                            teams up with Moda
+                            Operandi.
+                        </p>
+                        <p class="products__price">$52.00</p>
+                    </div>
+                </li>
+                <li class="products-item catalog__products-item">
+                    <div class="products__images">
+                        <div class="products__hover">
+                            <button class="products-item__btn-hover btn__reset">Add to Cart</button>
+                        </div>
+                        <img src="images/catalog-product-5.jpg" alt="" class="products__img">
+                    </div>
+                    <div class="products-item__content">
+                        <h3 class="products__title">
+                            ellery x m'o capsule
+                        </h3>
+                        <p class="products__text">
+                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                            teams up with
+                            Moda
+                            Operandi.
+                        </p>
+                        <p class="products__price">$52.00</p>
+                    </div>
+                </li>
+                <li class="products-item catalog__products-item">
+                    <div class="products__images">
+                        <div class="products__hover">
+                            <button class="products-item__btn-hover btn__reset">Add to Cart</button>
+                        </div>
+                        <img src="images/catalog-product-6.jpg" alt="" class="products__img">
+                    </div>
+                    <div class="products-item__content">
+                        <h3 class="products__title">
+                            ellery x m'o capsule
+                        </h3>
+                        <p class="products__text">
+                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                            teams up with
+                            Moda
+                            Operandi.
+                        </p>
+                        <p class="products__price">$52.00</p>
+                    </div>
+                </li>
+                <li class="products-item catalog__products-item">
+                    <div class="products__images">
+                        <div class="products__hover">
+                            <button class="products-item__btn-hover btn__reset">Add to Cart</button>
+                        </div>
+                        <img src="images/catalog-product-7.jpg" alt="" class="products__img">
+                    </div>
+                    <div class="products-item__content">
+                        <h3 class="products__title">
+                            ellery x m'o capsule
+                        </h3>
+                        <p class="products__text">
+                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                            teams up with
+                            Moda
+                            Operandi.
+                        </p>
+                        <p class="products__price">$52.00</p>
+                    </div>
+                </li>
+                <li class="products-item catalog__products-item">
+                    <div class="products__images">
+                        <div class="products__hover">
+                            <button class="products-item__btn-hover btn__reset">Add to Cart</button>
+                        </div>
+                        <img src="images/catalog-product-8.jpg" alt="" class="products__img">
+                    </div>
+                    <div class="products-item__content">
+                        <h3 class="products__title">
+                            ellery x m'o capsule
+                        </h3>
+                        <p class="products__text">
+                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                            teams up with
+                            Moda
+                            Operandi.
+                        </p>
+                        <p class="products__price">$52.00</p>
+                    </div>
+                </li>
+                <li class="products-item catalog__products-item">
+                    <div class="products__images">
+                        <div class="products__hover">
+                            <button class="products-item__btn-hover btn__reset">Add to Cart</button>
+                        </div>
+                        <img src="images/catalog-product-9.jpg" alt="" class="products__img">
+                    </div>
+                    <div class="products-item__content">
+                        <h3 class="products__title">
+                            ellery x m'o capsule
+                        </h3>
+                        <p class="products__text">
+                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                            teams up with
+                            Moda
+                            Operandi.
+                        </p>
+                        <p class="products__price">$52.00</p>
+                    </div>
+                </li>
+            </ul>
+            <div class="pogination">
+                <ul class="pogination__list">
+                    <button class="pogination__btn btn__reset pogination__btn-left ">
+                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.995 2L3.995 7L8.995 12L7.995 14L0.994995 7L7.995 0L8.995 2Z" fill="black" />
+                        </svg>
+                    </button>
+                    <button class="pogination__btn btn__reset pogination__btn-right">
+                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z" fill="black" />
+                        </svg>
+                    </button>
+                    <li class="pogination__list-item pogination__list-item--active"><a href="#">1</a></li>
+                    <li class="pogination__list-item"><a href="#">2</a></li>
+                    <li class="pogination__list-item"><a href="#">3</a></li>
+                    <li class="pogination__list-item"><a href="#">4</a></li>
+                    <li class="pogination__list-item"><a href="#">5</a></li>
+                    <li class="pogination__list-item"><a href="#">...</a></li>
+                    <li class="pogination__list-item"><a href="#">20</a></li>
+                  
+                </ul>
+            </div>
+         
+        </div>
     </section>
     <footer class="footer">
         <div class="footer__top">

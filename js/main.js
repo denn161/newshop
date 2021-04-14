@@ -2,12 +2,18 @@ const hb = document.querySelector('.header__btn');
 const menu = document.querySelector('.header');
 const close = document.querySelector('.menu__close-btn');
 const hidden = document.querySelector('body');
+const btn__size = document.querySelector('.catalogs__btn-size');
+const Sizes = document.querySelector('.sizes');
+// const filter__btn = document.querySelector('.catalogs__filter-btn');
+// const Filter = document.querySelector('.catalogs__nav');
 
 
 
 
 
-  
+
+
+
 
   
 hb.addEventListener('click', function (e) {
@@ -19,6 +25,27 @@ hb.addEventListener('click', function (e) {
 
 
 });
+
+btn__size.addEventListener('click', function () {
+  Sizes.classList.toggle('sizes--active');
+
+});
+
+// filter__btn.addEventListener('clcik', function () {
+  
+//   Filter.classList.toggle('catalogs__nav--active');
+  
+
+
+// });
+
+
+
+
+
+
+
+
 // close.addEventListener('click', function () {
 //   menu.classList.remove('active');
   
