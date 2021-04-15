@@ -3,6 +3,7 @@
     &__container {
         display: flex;
         position: relative;
+        // justify-content: center;
 
     }
 
@@ -15,9 +16,8 @@
     &__filter {
         position: absolute;
         top: -13px;
-        left: 15px;
+        left: 0;
         z-index: 10;
-        max-width: 360px;
         padding: 13px 17px 0 17px;
         transition: all 0.3s linear;
 
@@ -38,7 +38,7 @@
         }
 
         &:hover {
-            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+            // box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 
         }
 
@@ -46,7 +46,7 @@
             font-family: 'Lato', sans-serif;
             text-transform: uppercase;
             color: $black-color2;
-            @include font(14px, 17px, normal);
+            @include font(14px, 17px, 600);
             position: relative;
             padding-right: 26px;
             margin-bottom: 16px;
@@ -55,6 +55,12 @@
 
             @media(max-width:375px) {
                 font-size: 0;
+                width: 38px;
+                height: 25px;
+                background-image: url(../images/filter-btn.svg);
+                background-size: 38px 25px;
+                background-repeat: no-repeat;
+
             }
 
             // &:hover {
@@ -81,6 +87,12 @@
         min-height: 491px;
         display: none;
         transition: all 0.3s linear;
+
+        @media(max-width:375px) {
+          width: 100%;
+
+        }
+
 
         // &--active{
         //     display: block;
@@ -142,18 +154,33 @@
         fill: $black-color2;
         transition: fill 0.3s linear;
 
+        @media(max-width:375px) {
+            display: none;
+        }
+
+
+
+    }
+
+    &__choice {
+        margin-left: 34%;
+
+        @media (max-width:768px) {
+            margin: 0;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+
+        }
 
     }
 
 
 
-    &__list-btn {
-
-        margin: 0 auto;
-    }
+    &__list-btn {}
 
     &__btn-item:not(:last-child) {
-        margin-right: 30px;
+        margin-right: 20px;
 
 
     }
@@ -202,7 +229,7 @@
             padding: 10px 0 0 10px;
             background-color: #fff;
             width: 79px;
-            min-height: 103px;
+            min-height: 98px;
             position: absolute;
             top: 22px;
             left: 0;
@@ -212,7 +239,7 @@
 
 
             &__item {
-                margin-bottom: 10px;
+                margin-bottom: 4px;
                 position: relative;
             }
 

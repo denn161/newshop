@@ -2686,9 +2686,8 @@ img {
 .catalogs__filter {
   position: absolute;
   top: -13px;
-  left: 15px;
+  left: 0;
   z-index: 10;
-  max-width: 360px;
   padding: 13px 17px 0 17px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -2705,17 +2704,13 @@ img {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.catalogs__filter:hover {
-  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
-}
 .catalogs__filter-btn {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   color: #000000;
   font-size: 14px;
   line-height: 17px;
-  font-weight: normal;
+  font-weight: 600;
   position: relative;
   padding-right: 26px;
   margin-bottom: 16px;
@@ -2726,6 +2721,11 @@ img {
 @media (max-width: 375px) {
   .catalogs__filter-btn {
     font-size: 0;
+    width: 38px;
+    height: 25px;
+    background-image: url(../images/filter-btn.svg);
+    background-size: 38px 25px;
+    background-repeat: no-repeat;
   }
 }
 .catalogs__nav {
@@ -2734,6 +2734,11 @@ img {
   display: none;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+}
+@media (max-width: 375px) {
+  .catalogs__nav {
+    width: 100%;
+  }
 }
 .catalogs__nav-btn {
   display: -webkit-box;
@@ -2787,11 +2792,28 @@ img {
   -webkit-transition: fill 0.3s linear;
   transition: fill 0.3s linear;
 }
-.catalogs__list-btn {
-  margin: 0 auto;
+@media (max-width: 375px) {
+  .catalogs .filter__btn-img {
+    display: none;
+  }
+}
+.catalogs__choice {
+  margin-left: 34%;
+}
+@media (max-width: 768px) {
+  .catalogs__choice {
+    margin: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 .catalogs__btn-item:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 .catalogs__btn-item {
   display: inline-block;
@@ -2833,7 +2855,7 @@ img {
   padding: 10px 0 0 10px;
   background-color: #fff;
   width: 79px;
-  min-height: 103px;
+  min-height: 98px;
   position: absolute;
   top: 22px;
   left: 0;
@@ -2843,7 +2865,7 @@ img {
   z-index: 5;
 }
 .catalogs .catalogs__sizes .sizes__item {
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   position: relative;
 }
 .catalogs .catalogs__sizes .sizes__label {
