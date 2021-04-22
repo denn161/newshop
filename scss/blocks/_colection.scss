@@ -1,6 +1,11 @@
 .women__collection {
     max-width: 100%;
 
+    @media (max-width:375px) {
+       height: 554px;
+    }
+
+
 
     &-container {
         padding: 65px 0;
@@ -69,7 +74,7 @@
         text-align: center;
 
         @media (max-width:375px) {
-           width: 85%;
+            width: 85%;
         }
 
     }

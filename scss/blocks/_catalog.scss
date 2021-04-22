@@ -3,7 +3,6 @@
     &__container {
         display: flex;
         position: relative;
-        // justify-content: center;
 
     }
 
@@ -11,7 +10,6 @@
         padding: 51px 0 64px;
 
     }
-
 
     &__filter {
         position: absolute;
@@ -37,10 +35,10 @@
             transition: all 0.3s linear;
         }
 
-        &:hover {
-            // box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        // &:hover {
+        //     // box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 
-        }
+        // }
 
         &-btn {
             font-family: 'Lato', sans-serif;
@@ -62,24 +60,9 @@
                 background-repeat: no-repeat;
 
             }
-
-            // &:hover {
-            //     color: $pink-color;
-
-            // }
-
-            // &:hover .filter__btn-img {
-            //     fill: $pink-color;
-
-
-            // }
         }
 
-
     }
-
-
-
 
     &__nav {
         // background-color: #ffffff;
@@ -89,14 +72,10 @@
         transition: all 0.3s linear;
 
         @media(max-width:375px) {
-          width: 100%;
+            width: 100%;
 
         }
 
-
-        // &--active{
-        //     display: block;
-        // }
     }
 
     &__nav-btn {
@@ -133,6 +112,8 @@
 
         &-link {
             transition: all 0.3s ease;
+            @include font(14px, 17px, normal);
+            color: #6F6E6E;
         }
 
         &-link:hover {
@@ -141,11 +122,6 @@
 
         }
     }
-
-
-
-
-
 
     .filter__btn-img {
         position: absolute;
@@ -157,9 +133,6 @@
         @media(max-width:375px) {
             display: none;
         }
-
-
-
     }
 
     &__choice {
@@ -172,12 +145,7 @@
             justify-content: flex-end;
 
         }
-
     }
-
-
-
-    &__list-btn {}
 
     &__btn-item:not(:last-child) {
         margin-right: 20px;
@@ -200,10 +168,7 @@
             right: 0;
             display: block;
             @include background(no-repeat, center, cover);
-
         }
-
-
     }
 
     &__btn {
@@ -218,12 +183,17 @@
         }
     }
 
+   
+
+    .catalogs__btn-size:hover+.sizes {
+        display: block;
+        transition: all 0.5s linear;
+    }
+
+
 
     .catalogs__sizes {
         position: relative;
-
-
-
 
         .sizes {
             padding: 10px 0 0 10px;
@@ -236,7 +206,7 @@
             box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
             display: none;
             z-index: 5;
-
+            transition: all 0.3s linear;
 
             &__item {
                 margin-bottom: 4px;
@@ -296,15 +266,10 @@
                 }
             }
 
-
             &.sizes--active {
                 display: block;
                 transition: all 0.3s linear;
             }
-
-
-
-
 
         }
 

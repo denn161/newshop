@@ -2453,7 +2453,7 @@ img {
   background: rgba(42, 42, 42, 0.15);
   padding: 12px 17px;
 }
-.product .swiper-button-next:after,
+.product .swiper-button-next::after,
 .product .swiper-button-prev::after {
   color: #000000;
   font-size: 20px;
@@ -2469,6 +2469,11 @@ img {
 
 .women__collection {
   max-width: 100%;
+}
+@media (max-width: 375px) {
+  .women__collection {
+    height: 554px;
+  }
 }
 .women__collection-container {
   padding: 65px 0;
@@ -2778,6 +2783,10 @@ img {
 .catalogs__item-link {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: normal;
+  color: #6F6E6E;
 }
 .catalogs__item-link:hover {
   -webkit-transform: scale(1.2);
@@ -2848,6 +2857,11 @@ img {
     font-weight: normal;
   }
 }
+.catalogs .catalogs__btn-size:hover + .sizes {
+  display: block;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
 .catalogs .catalogs__sizes {
   position: relative;
 }
@@ -2863,6 +2877,8 @@ img {
           box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
   display: none;
   z-index: 5;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .catalogs .catalogs__sizes .sizes__item {
   margin-bottom: 4px;
