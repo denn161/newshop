@@ -59,7 +59,23 @@
                 <a href="#" class="header__item-link"><img src="images/user-icon.svg" alt="" class="user__img"></a>
                 <a href="#" class="header__item-link basket__link"><img src="images/basket.svg" alt=""
                         class="basket__img">
-                    <span>5</span></a>
+                    <span class="basket__count">0</span></a>
+                     <div class="basket hidden">
+                         <div class="basket__list">
+                             <div class="basket__item">Название товара</div>
+                             <div class="basket__item">Количество</div>
+                             <div class="basket__item">Цена за штуку</div>
+                             <div class="basket__item">Итого</div>
+                         </div>
+                         <div class="basket__total">Товара в корзине на сумму : <span class='basket__total-value'>0</span>
+                         </div>
+                         <div class="product__total-summ">Всего товаров в корзине <span class="product__summ">0</span>
+                         </div>
+                     </div>
+
+
+
+                    
             </div>
         </div>
         <nav id="nav" class="header__menu">
@@ -263,8 +279,7 @@
                                         <a href="#" class="catalogs__item-link">Tanks</a>
                                     </li>
                                 </ul>
-                            </div>                
-                        
+                            </div>    
                         
                         
                         </div>
@@ -278,252 +293,60 @@
                             <div class="sizes">
                                 <div class="sizes__item ">
                                     <input id="size1" class="sizes__input" type="checkbox">
-                                    <label class="sizes__label" for="size1">XS</label>
-                    
+                                    <label class="sizes__label" for="size1">XS</label>                    
                                 </div>
                                 <div class="sizes__item">
                                     <input id="size2" class="sizes__input" type="checkbox">
-                                    <label class="sizes__label" for="size2">S</label>
-                    
+                                    <label class="sizes__label" for="size2">S</label>                   
                                 </div>
                                 <div class="sizes__item">
                                     <input id="size3" class="sizes__input" type="checkbox">
-                                    <label class="sizes__label" for="size3">M</label>
-                    
+                                    <label class="sizes__label" for="size3">M</label>                   
                                 </div>
                                 <div class="sizes__item">
                                     <input id="size4" class="sizes__input" type="checkbox">
                                     <label class="sizes__label" for="size4">L</label>
                                 </div>
-                            </div>               
-                    
+                            </div>                
                     
                         </li>
                         <li class="catalogs__btn-item"><button class="catalogs__btn btn__reset">PRICE</button></li>
                     </ul>
-
-                 </div>
-
-                   
+                 </div>                
               
             </div>
         </div>             
     </section>
     <section class="fetured catalogs__products ">
         <h2 class="services__title-hidden">Заголовок секции</h2>
-        <div class="container">               
-            <ul class="fetured__products catalog__products">
-                <li class="products-item catalog__products-item  ">
-    
-                    <div class="products__images">
-                        <div class="products__hover">
-                            <button class="products-item__btn-hover btn__reset">
-    
-    
-                                Add to Cart</button>
-                        </div>
-                        <img src="images/product-1.jpg" alt="" class="products__img">
-                    </div>
-    
-                    <div class="products-item__content">
-                        <h3 class="products__title">
-                            ellery x m'o capsule
-                        </h3>
-                        <p class="products__text">
-                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
-                            teams up with
-                            Moda
-                            Operandi.
-                        </p>
-                        <p class="products__price">$52.00</p>
-                    </div>
-    
-                </li>
-    
-                <li class="products-item catalog__products-item">
-                    <div class="products__images">
-                        <div class="products__hover">
-                            <button class="products-item__btn-hover btn__reset">Add to Cart</button>
-                        </div>
-                        <img src="images/catalog-product-2.jpg" alt="" class="products__img">
-                    </div>
-                    <div class="products-item__content">
-                        <h3 class="products__title">
-                            ellery x m'o capsule
-                        </h3>
-                        <p class="products__text">
-                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
-                            teams up with
-                            Moda
-                            Operandi.
-                        </p>
-                        <p class="products__price">$52.00</p>
-                    </div>
-                </li>
-                <li class="products-item catalog__products-item">
-                    <div class="products__images">
-                        <div class="products__hover">
-                            <button class="products-item__btn-hover btn__reset">Add to Cart</button>
-                        </div>
-                        <img src="images/product-3.jpg" alt="" class="products__img">
-                    </div>
-                    <div class="products-item__content">
-                        <h3 class="products__title">
-                            ellery x m'o capsule
-                        </h3>
-                        <p class="products__text">
-                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
-                            teams up with
-                            Moda
-                            Operandi.
-                        </p>
-                        <p class="products__price">$52.00</p>
-                    </div>
-                </li>
-                <li class="products-item catalog__products-item">
-                    <div class="products__images">
-                        <div class="products__hover">
-                            <button class="products-item__btn-hover btn__reset">Add to Cart</button>
-                        </div>
-                        <img src="images/product-4.jpg" alt="" class="products__img">
-                    </div>
-                    <div class="products-item__content">
-                        <h3 class="products__title">
-                            ellery x m'o capsule
-                        </h3>
-                        <p class="products__text">
-                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
-                            teams up with Moda
-                            Operandi.
-                        </p>
-                        <p class="products__price">$52.00</p>
-                    </div>
-                </li>
-                <li class="products-item catalog__products-item">
-                    <div class="products__images">
-                        <div class="products__hover">
-                            <button class="products-item__btn-hover btn__reset">Add to Cart</button>
-                        </div>
-                        <img src="images/catalog-product-5.jpg" alt="" class="products__img">
-                    </div>
-                    <div class="products-item__content">
-                        <h3 class="products__title">
-                            ellery x m'o capsule
-                        </h3>
-                        <p class="products__text">
-                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
-                            teams up with
-                            Moda
-                            Operandi.
-                        </p>
-                        <p class="products__price">$52.00</p>
-                    </div>
-                </li>
-                <li class="products-item catalog__products-item">
-                    <div class="products__images">
-                        <div class="products__hover">
-                            <button class="products-item__btn-hover btn__reset">Add to Cart</button>
-                        </div>
-                        <img src="images/catalog-product-6.jpg" alt="" class="products__img">
-                    </div>
-                    <div class="products-item__content">
-                        <h3 class="products__title">
-                            ellery x m'o capsule
-                        </h3>
-                        <p class="products__text">
-                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
-                            teams up with
-                            Moda
-                            Operandi.
-                        </p>
-                        <p class="products__price">$52.00</p>
-                    </div>
-                </li>
-                <li class="products-item catalog__products-item">
-                    <div class="products__images">
-                        <div class="products__hover">
-                            <button class="products-item__btn-hover btn__reset">Add to Cart</button>
-                        </div>
-                        <img src="images/catalog-product-7.jpg" alt="" class="products__img">
-                    </div>
-                    <div class="products-item__content">
-                        <h3 class="products__title">
-                            ellery x m'o capsule
-                        </h3>
-                        <p class="products__text">
-                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
-                            teams up with
-                            Moda
-                            Operandi.
-                        </p>
-                        <p class="products__price">$52.00</p>
-                    </div>
-                </li>
-                <li class="products-item catalog__products-item">
-                    <div class="products__images">
-                        <div class="products__hover">
-                            <button class="products-item__btn-hover btn__reset">Add to Cart</button>
-                        </div>
-                        <img src="images/catalog-product-8.jpg" alt="" class="products__img">
-                    </div>
-                    <div class="products-item__content">
-                        <h3 class="products__title">
-                            ellery x m'o capsule
-                        </h3>
-                        <p class="products__text">
-                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
-                            teams up with
-                            Moda
-                            Operandi.
-                        </p>
-                        <p class="products__price">$52.00</p>
-                    </div>
-                </li>
-                <li class="products-item catalog__products-item">
-                    <div class="products__images">
-                        <div class="products__hover">
-                            <button class="products-item__btn-hover btn__reset">Add to Cart</button>
-                        </div>
-                        <img src="images/catalog-product-9.jpg" alt="" class="products__img">
-                    </div>
-                    <div class="products-item__content">
-                        <h3 class="products__title">
-                            ellery x m'o capsule
-                        </h3>
-                        <p class="products__text">
-                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
-                            teams up with
-                            Moda
-                            Operandi.
-                        </p>
-                        <p class="products__price">$52.00</p>
-                    </div>
-                </li>
-            </ul>
-            <div class="pogination">
-                <ul class="pogination__list">
-                   <li> <button class="pogination__btn btn__reset pogination__btn-left ">
-                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8.995 2L3.995 7L8.995 12L7.995 14L0.994995 7L7.995 0L8.995 2Z" fill="black" />
-                        </svg>
-                    </button></li>
-                   <li> <button class="pogination__btn btn__reset pogination__btn-right">
-                        <svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z" fill="black" />
-                        </svg>
-                    </button></li>
-                    <li class="pogination__list-item pogination__list-item--active"><a href="#">1</a></li>
-                    <li class="pogination__list-item"><a href="#">2</a></li>
-                    <li class="pogination__list-item"><a href="#">3</a></li>
-                    <li class="pogination__list-item"><a href="#">4</a></li>
-                    <li class="pogination__list-item"><a href="#">5</a></li>
-                    <li class="pogination__list-item"><a href="#">...</a></li>
-                    <li class="pogination__list-item"><a href="#">20</a></li>
-                  
-                </ul>
-            </div>
-         
-        </div>
+           <div class="container">
+               <div class="pogination">
+                   <ul class="pogination__list">
+                       <li> <button class="pogination__btn btn__reset pogination__btn-left ">
+                               <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                   <path d="M8.995 2L3.995 7L8.995 12L7.995 14L0.994995 7L7.995 0L8.995 2Z"
+                                       fill="black" />
+                               </svg>
+                           </button></li>
+                       <li> <button class="pogination__btn btn__reset pogination__btn-right">
+                               <svg width="9" height="14" viewBox="0 0 9 14" fill="none"
+                                   xmlns="http://www.w3.org/2000/svg">
+                                   <path d="M0.994995 12L5.995 7L0.994995 2L1.995 0L8.995 7L1.995 14L0.994995 12Z"
+                                       fill="black" />
+                               </svg>
+                           </button></li>
+                       <li class="pogination__list-item pogination__list-item--active"><a href="#">1</a></li>
+                       <li class="pogination__list-item"><a href="#">2</a></li>
+                       <li class="pogination__list-item"><a href="#">3</a></li>
+                       <li class="pogination__list-item"><a href="#">4</a></li>
+                       <li class="pogination__list-item"><a href="#">5</a></li>
+                       <li class="pogination__list-item"><a href="#">...</a></li>
+                       <li class="pogination__list-item"><a href="#">20</a></li>
+
+                   </ul>
+               </div>
+           </div>         
     </section>
     <footer class="footer">
         <div class="footer__top">
@@ -536,7 +359,6 @@
                         “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
                     </p>
                 </div>
-
                 <form class="footer__form">
                     <h2 class="form__title">
                         subscribe
@@ -547,9 +369,7 @@
                     <div class="form__box">
                         <input type="email" class="form__input" placeholder="Enter Your Email">
                         <button class="form__btn btn__reset">Subscribe</button>
-
                     </div>
-
                 </form>
             </div>
         </div>
@@ -587,20 +407,16 @@
                             </svg>
                         </a>
                     </li>
-
                 </ul>
-
             </div>
         </div>
+    </footer>  
+     <script src="main.js"></script>
+   <script src="js/Catalog/catalogProducts.js"></script>
+   <script src="js/Catalog/constants/Constants.js"></script>
+   <script src="js/Catalog/Basket/basket.js"></script>
+    <script src="js/Catalog/productsCart.js"></script>
+  
 
-    </footer>
-
-
-
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/main.js"></script>
 </body>
-
 </html>
