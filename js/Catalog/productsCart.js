@@ -53,7 +53,7 @@ class ProductsCart{
 }
  
 const productPage = new ProductsCart();
-productPage.render();
+
 
 
 

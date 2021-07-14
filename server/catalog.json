@@ -1,0 +1,64 @@
+ [{
+    "id": 0,
+    "name": "Nike",
+    "img": "images/catalog-product-1.jpg",
+    "descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price":178.00
+},
+ {
+    "id": 1,
+    "name": "D&G",
+    "img": "images/catalog-product-2.jpg",
+    "descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price":193.00
+    },
+ {
+    "id": 2,
+    "name": "Zara",
+    "img": "images/catalog-product-3.jpg",
+    "descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price":256.00
+    },
+ {
+    "id": 3,
+    "name": "Lacoste",
+    "img": "images/catalog-product-4.jpg",
+    "descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price":152.00
+    },
+ {
+    "id": 4,
+    "name": "Puma",
+    "img": "images/catalog-product-5.jpg",
+    "descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price":176.00
+    },
+ {
+    "id": 5,
+    "name": "Adidas",
+    "img": "images/catalog-product-6.jpg",
+    "descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price":189.00
+    },
+ {
+    "id": 6,
+    "name": "Celvin Cline",
+    "img": "images/catalog-product-7.jpg",
+    "descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price":193.00
+    },
+ {
+    "id": 7,
+    "name": "H&M",
+    "img": "images/catalog-product-8.jpg",
+    "descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price":201.00
+    },
+ {
+    "id": 8,
+    "name": "Collins",
+    "img": "images/catalog-product-9.jpg",
+    "descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+    "price":223.00
+    }
+]

@@ -1,0 +1,32 @@
+.error__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error__text{
+    width: 400px;
+    height: 200px;
+    background-color: brown;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    transform: translate(-1500px);
+    transition: all 0.5s;
+    border-radius: 8px;
+}
+.error__text h3{
+    margin-bottom: 20px;
+}
+
+.active{
+    transform: translate(0);
+
+}

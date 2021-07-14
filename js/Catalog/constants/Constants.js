@@ -7,6 +7,8 @@ const basket = document.querySelector('.basket');
 const basketTotalEl = document.querySelector('.basket__total');
 const basketTotalValueEl = document.querySelector('.basket__total-value');
 const productTotalSummEl = document.querySelector('.product__summ');
+const ROOT_SPINNER = document.getElementById('spinner');
+const ROOT_ERROR = document.getElementById('error');
 
 basketButton.addEventListener('click', () => {
     basket.classList.toggle('hidden');
